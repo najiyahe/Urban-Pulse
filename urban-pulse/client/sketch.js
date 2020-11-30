@@ -25,49 +25,6 @@ socket.on('message', (data) => {
 
 socket.open();
 
-// Simple Particle System
-//Ml5.js
-
-
-let ps;
-
-//set up ml5
-let video;
-let poseNet;
-let pose;
-
-
-function setup() {
-  
-  createCanvas(640,520);
-  colorMode(HSB);
-
-
-  // initiate particle system
-  ps = new ParticleSystem(createVector(width / 2, 50));
-
-  //ml5 video
-  video = createCapture(VIDEO);
-  video.hide(0);
-  poseNet = ml5.poseNet(video, modelLoaded);
-  poseNet.on('pose', gotPoses);
-  
-}
-
-function draw() {
-  //background(250);
-  image(video,0,0);
-  //filter(INVERT);
- 
-  
-  if (pose){
-  // Option #1 (move the Particle System origin)
-  ps.origin.set((width-pose.nose.x), pose.nose.y, 0);
-  ps.addParticle();
-  ps.run();
- 
-}
-}
 /////////// P5JS Sketch ///////////
 
 // function setup() {
