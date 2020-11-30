@@ -28,7 +28,7 @@ using namespace websockets;
 
 const char ssid[] = "Fios-WE1WY"; // your network SSID (name)
 const char pass[] = "9326cycle9048tanks"; // your network password
-const char serverUrl[] = "wss://fierce-hollows-70179.herokuapp.com"; // The server you want to connect to
+const char serverUrl[] = "wss://lit-citadel-05208.herokuapp.com"; // The server you want to connect to
 
 
 

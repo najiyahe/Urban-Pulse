@@ -1,7 +1,6 @@
 {
   "name": "collective-server",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "author": "Michael Meisel",
   "license": "ISC",
@@ -16,5 +15,7 @@
   "scripts": {
     "start": "node server.js",
     "deploy": "cd ../.. && git subtree push --prefix urban-pulse/server heroku master"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
