@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "node server.js",
-    "deploy": "cd ../.. && git subtree push --prefix urban-pulse-repo/server heroku master"
+    "deploy": "cd ../.. && git subtree push --prefix urban-pulse/server heroku master"
   }
 }
